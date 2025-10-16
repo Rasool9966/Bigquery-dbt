@@ -20,25 +20,27 @@ jobs:
           python-version: "3.10"
 
       - name: Install dbt-bigquery
-        run: |
-          pip install dbt-bigquery==1.7.0
+        run: pip install dbt-bigquery
 
+      # ✅ FIX: move into the correct folder before running dbt
+      - name: Change directory to ga4_attribution
+        run: cd ga4_attribution && ls -la
+
+      # ✅ Setup GCP credentials
       - name: Set up GCP credentials
         env:
-          GCP_SERVICE_ACCOUNT_KEY: ${{ secrets.GCP_SERVICE_ACCOUNT_KEY }}
-        run: |
-          echo "$GCP_SERVICE_ACCOUNT_KEY" > $HOME/keyfile.json
-          export GOOGLE_APPLICATION_CREDENTIALS=$HOME/keyfile.json
-
-      - name: Run dbt debug
-        env:
           GOOGLE_APPLICATION_CREDENTIALS: $HOME/keyfile.json
+        run: |
+          echo "${{ secrets.GCP_SERVICE_ACCOUNT_KEY }}" > $HOME/keyfile.json
+          cat $HOME/keyfile.json | jq .project_id
+
+      # ✅ Run dbt commands inside correct folder
+      - name: Run dbt debug
+        working-directory: ga4_attribution
         run: dbt debug
 
       - name: Run dbt build (run + test)
-        env:
-          GOOGLE_APPLICATION_CREDENTIALS: $HOME/keyfile.json
+        working-directory: ga4_attribution
         run: |
           dbt deps
-          dbt run
-          dbt test
+          dbt build
