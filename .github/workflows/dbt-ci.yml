@@ -31,8 +31,9 @@ jobs:
         env:
           GOOGLE_APPLICATION_CREDENTIALS: $HOME/keyfile.json
         run: |
-          echo "${{ secrets.GCP_SERVICE_ACCOUNT_KEY }}" > $HOME/keyfile.json
+          echo '${{ secrets.GCP_SERVICE_ACCOUNT_KEY }}' > $HOME/keyfile.json
           cat $HOME/keyfile.json | jq .project_id
+
 
       # ✅ Run dbt commands inside correct folder
       - name: Run dbt debug
