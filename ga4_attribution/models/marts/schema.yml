@@ -1,0 +1,30 @@
+version: 2
+
+models:
+  - name: first_click
+    description: "Model that identifies the first traffic source for each purchasing user."
+    columns:
+      - name: user_pseudo_id
+        tests:
+          - unique
+          - not_null
+
+  - name: last_click
+    description: "Model that identifies the last traffic source for each purchasing user."
+    columns:
+      - name: user_pseudo_id
+        tests:
+          - unique
+          - not_null
+
+  - name: attribution_summary
+    description: "Combined attribution model showing both first and last click for each user."
+    columns:
+      - name: user_pseudo_id
+        tests:
+          - unique
+          - not_null
+      - name: first_source
+        description: "Source of first click"
+      - name: last_source
+        description: "Source of last click"

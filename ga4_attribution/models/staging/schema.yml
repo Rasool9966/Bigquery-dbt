@@ -1,0 +1,18 @@
+version: 2
+
+models:
+  - name: stg_ga4_events
+    description: "Raw staging model pulling GA4 e-commerce event data from the public dataset."
+    columns:
+      - name: user_pseudo_id
+        description: "Anonymous identifier for a user in GA4."
+        tests:
+          - not_null
+      - name: event_name
+        description: "Type of event (page_view, add_to_cart, purchase, etc)."
+        tests:
+          - not_null
+      - name: event_timestamp
+        description: "Timestamp of when the event occurred."
+      - name: source
+        description: "Traffic source (google, direct, etc)."
