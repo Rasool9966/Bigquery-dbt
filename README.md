@@ -2,7 +2,7 @@
 
 # GA4 Near-Real-Time Attribution Demo
 
-**Goal:** Build a near-real-time attribution pipeline and dashboard computing First-Click and Last-Click using the GA4 public dataset, BigQuery, dbt, and a simple streaming demo.
+**Goal:** Build a near-real-time attribution pipeline and dashboard computing First-Click and Last-Click using the GA4 public dataset, BigQuery, dbt.
 
 ## What’s included
 - dbt project (models/staging → marts) that builds:
