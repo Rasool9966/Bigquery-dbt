@@ -14,7 +14,6 @@
   - `streaming_events` table + sample Python script (`stream_events.py`) to insert events
 - Dashboard prototypes:
   - Looker Studio report (live BigQuery connection)
-  - Streamlit app (`app.py`) for live demo
 - CI/CD: GitHub Actions workflow `.github/workflows/dbt-ci.yml`
 - Tests & docs: `models/*/schema.yml` + `dbt docs`
 
