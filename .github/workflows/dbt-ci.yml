@@ -1,0 +1,44 @@
+name: dbt BigQuery CI/CD
+
+on:
+  push:
+    branches: [ main, dev ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  dbt-run:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: "3.10"
+
+      - name: Install dbt-bigquery
+        run: |
+          pip install dbt-bigquery==1.7.0
+
+      - name: Set up GCP credentials
+        env:
+          GCP_SERVICE_ACCOUNT_KEY: ${{ secrets.GCP_SERVICE_ACCOUNT_KEY }}
+        run: |
+          echo "$GCP_SERVICE_ACCOUNT_KEY" > $HOME/keyfile.json
+          export GOOGLE_APPLICATION_CREDENTIALS=$HOME/keyfile.json
+
+      - name: Run dbt debug
+        env:
+          GOOGLE_APPLICATION_CREDENTIALS: $HOME/keyfile.json
+        run: dbt debug
+
+      - name: Run dbt build (run + test)
+        env:
+          GOOGLE_APPLICATION_CREDENTIALS: $HOME/keyfile.json
+        run: |
+          dbt deps
+          dbt run
+          dbt test

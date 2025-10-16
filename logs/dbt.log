@@ -1,0 +1,150 @@
+[0m03:42:30.250556 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000016A22A596A0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000016A20728190>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000016A24BDFC50>]}
+
+
+============================== 03:42:30.254479 | 7d7f8f31-03d9-42cd-ab13-d757815dccce ==============================
+[0m03:42:30.254479 [info ] [MainThread]: Running with dbt=1.11.0-b3
+[0m03:42:30.255090 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'target_path': 'None', 'cache_selected_only': 'False', 'warn_error': 'None', 'profiles_dir': 'C:\\Users\\nayab\\.dbt', 'debug': 'False', 'static_parser': 'True', 'log_cache_events': 'False', 'empty': 'None', 'log_format': 'default', 'quiet': 'False', 'use_colors': 'True', 'partial_parse': 'True', 'version_check': 'True', 'log_path': 'logs', 'introspect': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'fail_fast': 'False', 'no_print': 'None', 'invocation_command': 'dbt init ga4_attribution', 'send_anonymous_usage_stats': 'True', 'indirect_selection': 'eager', 'use_experimental_parser': 'False', 'write_json': 'True'}
+[0m03:42:30.263502 [info ] [MainThread]: Creating dbt configuration folder at C:\Users\nayab\.dbt
+[0m03:42:30.265472 [debug] [MainThread]: Starter project path: C:\Users\nayab\AppData\Local\Programs\Python\Python313\Lib\site-packages\dbt\include\starter_project
+[0m03:42:30.292272 [info ] [MainThread]: 
+Your new dbt project "ga4_attribution" was created!
+
+For more information on how to configure the profiles.yml file,
+please consult the dbt documentation here:
+
+  https://docs.getdbt.com/docs/configure-your-profile
+
+One more thing:
+
+Need help? Don't hesitate to reach out to us via GitHub issues or on Slack:
+
+  https://community.getdbt.com/
+
+Happy modeling!
+
+[0m03:42:30.293107 [info ] [MainThread]: Setting up your profile.
+[0m03:43:27.623405 [info ] [MainThread]: Profile ga4_attribution written to C:\Users\nayab\.dbt\profiles.yml using target's profile_template.yml and your supplied values. Run 'dbt debug' to validate the connection.
+[0m03:43:27.625549 [debug] [MainThread]: Command `dbt init` succeeded at 03:43:27.625403 after 57.49 seconds
+[0m03:43:27.625892 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000016A43E9AD70>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000016A49AB71D0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000016A49A81150>]}
+[0m03:43:27.626269 [debug] [MainThread]: Flushing usage events
+[0m03:43:28.567492 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m03:43:38.405961 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000217987F96A0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000217964B8190>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002179A983C50>]}
+
+
+============================== 03:43:38.408721 | 7fa51016-0688-4e6e-ac44-d3bb2c488b69 ==============================
+[0m03:43:38.408721 [info ] [MainThread]: Running with dbt=1.11.0-b3
+[0m03:43:38.409369 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'write_json': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'empty': 'None', 'debug': 'False', 'static_parser': 'True', 'log_cache_events': 'False', 'profiles_dir': 'C:\\Users\\nayab\\.dbt', 'quiet': 'False', 'log_format': 'default', 'use_colors': 'True', 'partial_parse': 'True', 'version_check': 'True', 'log_path': 'logs', 'introspect': 'True', 'invocation_command': 'dbt debug', 'fail_fast': 'False', 'no_print': 'None', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'send_anonymous_usage_stats': 'True', 'indirect_selection': 'eager', 'use_experimental_parser': 'False', 'target_path': 'None'}
+[0m03:43:38.418631 [info ] [MainThread]: dbt version: 1.11.0-b3
+[0m03:43:38.419294 [info ] [MainThread]: python version: 3.13.5
+[0m03:43:38.419656 [info ] [MainThread]: python path: C:\Users\nayab\AppData\Local\Programs\Python\Python313\python.exe
+[0m03:43:38.419911 [info ] [MainThread]: os info: Windows-11-10.0.26100-SP0
+[0m03:43:40.265076 [info ] [MainThread]: Using profiles dir at C:\Users\nayab\.dbt
+[0m03:43:40.265942 [info ] [MainThread]: Using profiles.yml file at C:\Users\nayab\.dbt\profiles.yml
+[0m03:43:40.266305 [info ] [MainThread]: Using dbt_project.yml file at C:\Users\nayab\OneDrive\Desktop\Poornima's - Project\Bigquery-dbt\dbt_project.yml
+[0m03:43:40.266646 [info ] [MainThread]: adapter type: bigquery
+[0m03:43:40.266843 [info ] [MainThread]: adapter version: 1.10.2
+[0m03:43:40.267063 [info ] [MainThread]: Configuration:
+[0m03:43:40.267238 [info ] [MainThread]:   profiles.yml file [[32mOK found and valid[0m]
+[0m03:43:40.267419 [info ] [MainThread]:   dbt_project.yml file [[31mERROR not found[0m]
+[0m03:43:40.267616 [info ] [MainThread]: Required dependencies:
+[0m03:43:40.267868 [debug] [MainThread]: Executing "git --help"
+[0m03:43:40.385673 [debug] [MainThread]: STDOUT: "b"usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--no-lazy-fetch]\n           [--no-optional-locks] [--no-advice] [--bare] [--git-dir=<path>]\n           [--work-tree=<path>] [--namespace=<name>] [--config-env=<name>=<envvar>]\n           <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone      Clone a repository into a new directory\n   init       Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add        Add file contents to the index\n   mv         Move or rename a file, a directory, or a symlink\n   restore    Restore working tree files\n   rm         Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect     Use binary search to find the commit that introduced a bug\n   diff       Show changes between commits, commit and working tree, etc\n   grep       Print lines matching a pattern\n   log        Show commit logs\n   show       Show various types of objects\n   status     Show the working tree status\n\ngrow, mark and tweak your common history\n   backfill   Download missing objects in a partial clone\n   branch     List, create, or delete branches\n   commit     Record changes to the repository\n   merge      Join two or more development histories together\n   rebase     Reapply commits on top of another base tip\n   reset      Reset current HEAD to the specified state\n   switch     Switch branches\n   tag        Create, list, delete or verify a tag object signed with GPG\n\ncollaborate (see also: git help workflows)\n   fetch      Download objects and refs from another repository\n   pull       Fetch from and integrate with another repository or a local branch\n   push       Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m03:43:40.386259 [debug] [MainThread]: STDERR: "b''"
+[0m03:43:40.386703 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m03:43:40.387446 [info ] [MainThread]: Connection:
+[0m03:43:40.387854 [info ] [MainThread]:   method: oauth
+[0m03:43:40.388198 [info ] [MainThread]:   database: arcane-text-472313-v2
+[0m03:43:40.388544 [info ] [MainThread]:   execution_project: arcane-text-472313-v2
+[0m03:43:40.388832 [info ] [MainThread]:   schema: ga4_attribution_demo
+[0m03:43:40.389111 [info ] [MainThread]:   location: US
+[0m03:43:40.389373 [info ] [MainThread]:   priority: interactive
+[0m03:43:40.389639 [info ] [MainThread]:   maximum_bytes_billed: None
+[0m03:43:40.389894 [info ] [MainThread]:   impersonate_service_account: None
+[0m03:43:40.390145 [info ] [MainThread]:   job_retry_deadline_seconds: None
+[0m03:43:40.390396 [info ] [MainThread]:   job_retries: 1
+[0m03:43:40.390650 [info ] [MainThread]:   job_creation_timeout_seconds: None
+[0m03:43:40.390899 [info ] [MainThread]:   job_execution_timeout_seconds: 300
+[0m03:43:40.391143 [info ] [MainThread]:   timeout_seconds: 300
+[0m03:43:40.391390 [info ] [MainThread]:   client_id: None
+[0m03:43:40.391649 [info ] [MainThread]:   token_uri: None
+[0m03:43:40.391890 [info ] [MainThread]:   compute_region: None
+[0m03:43:40.392134 [info ] [MainThread]:   dataproc_cluster_name: None
+[0m03:43:40.392370 [info ] [MainThread]:   gcs_bucket: None
+[0m03:43:40.392767 [info ] [MainThread]:   dataproc_batch: None
+[0m03:43:40.393254 [info ] [MainThread]: Registered adapter: bigquery=1.10.2
+[0m03:43:40.831219 [debug] [MainThread]: Acquiring new bigquery connection 'debug'
+[0m03:43:40.831556 [debug] [MainThread]: On debug: select 1 as id
+[0m03:43:40.831768 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m03:43:44.082346 [debug] [MainThread]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=arcane-text-472313-v2&j=bq:US:71769377-d8d2-4f57-8ded-911e1008f9a6&page=queryresults
+[0m03:43:45.116264 [info ] [MainThread]:   Connection test: [[32mOK connection ok[0m]
+
+[0m03:43:45.117888 [info ] [MainThread]: [31m1 check failed:[0m
+[0m03:43:45.118908 [info ] [MainThread]: Project loading failed for the following reason:
+ project path <C:\Users\nayab\OneDrive\Desktop\Poornima's - Project\Bigquery-dbt\dbt_project.yml> not found
+
+[0m03:43:45.120514 [debug] [MainThread]: Command `dbt debug` failed at 03:43:45.120327 after 6.86 seconds
+[0m03:43:45.120960 [debug] [MainThread]: Connection 'debug' was properly closed.
+[0m03:43:45.121412 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000217BF934640>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000217BF8F7530>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000217BF835AE0>]}
+[0m03:43:45.121914 [debug] [MainThread]: Flushing usage events
+[0m03:43:46.028732 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m03:45:10.681411 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000015EC3F696A0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000015EC1C38190>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000015EC60F3C50>]}
+
+
+============================== 03:45:10.684259 | 660b9f2d-b2aa-44c1-b77d-159158200c7e ==============================
+[0m03:45:10.684259 [info ] [MainThread]: Running with dbt=1.11.0-b3
+[0m03:45:10.684872 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'target_path': 'None', 'cache_selected_only': 'False', 'warn_error': 'None', 'empty': 'None', 'debug': 'False', 'static_parser': 'True', 'log_cache_events': 'False', 'profiles_dir': 'C:\\Users\\nayab\\.dbt', 'log_format': 'default', 'quiet': 'False', 'use_colors': 'True', 'partial_parse': 'True', 'version_check': 'True', 'log_path': 'logs', 'introspect': 'True', 'invocation_command': 'dbt debug', 'fail_fast': 'False', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'no_print': 'None', 'send_anonymous_usage_stats': 'True', 'indirect_selection': 'eager', 'use_experimental_parser': 'False', 'write_json': 'True'}
+[0m03:45:10.692256 [info ] [MainThread]: dbt version: 1.11.0-b3
+[0m03:45:10.692739 [info ] [MainThread]: python version: 3.13.5
+[0m03:45:10.693086 [info ] [MainThread]: python path: C:\Users\nayab\AppData\Local\Programs\Python\Python313\python.exe
+[0m03:45:10.693651 [info ] [MainThread]: os info: Windows-11-10.0.26100-SP0
+[0m03:45:12.512419 [info ] [MainThread]: Using profiles dir at C:\Users\nayab\.dbt
+[0m03:45:12.513229 [info ] [MainThread]: Using profiles.yml file at C:\Users\nayab\.dbt\profiles.yml
+[0m03:45:12.513706 [info ] [MainThread]: Using dbt_project.yml file at C:\Users\nayab\OneDrive\Desktop\Poornima's - Project\Bigquery-dbt\dbt_project.yml
+[0m03:45:12.514093 [info ] [MainThread]: adapter type: bigquery
+[0m03:45:12.514473 [info ] [MainThread]: adapter version: 1.10.2
+[0m03:45:12.514969 [info ] [MainThread]: Configuration:
+[0m03:45:12.515330 [info ] [MainThread]:   profiles.yml file [[32mOK found and valid[0m]
+[0m03:45:12.515635 [info ] [MainThread]:   dbt_project.yml file [[31mERROR not found[0m]
+[0m03:45:12.515975 [info ] [MainThread]: Required dependencies:
+[0m03:45:12.516379 [debug] [MainThread]: Executing "git --help"
+[0m03:45:12.637366 [debug] [MainThread]: STDOUT: "b"usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--no-lazy-fetch]\n           [--no-optional-locks] [--no-advice] [--bare] [--git-dir=<path>]\n           [--work-tree=<path>] [--namespace=<name>] [--config-env=<name>=<envvar>]\n           <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone      Clone a repository into a new directory\n   init       Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add        Add file contents to the index\n   mv         Move or rename a file, a directory, or a symlink\n   restore    Restore working tree files\n   rm         Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect     Use binary search to find the commit that introduced a bug\n   diff       Show changes between commits, commit and working tree, etc\n   grep       Print lines matching a pattern\n   log        Show commit logs\n   show       Show various types of objects\n   status     Show the working tree status\n\ngrow, mark and tweak your common history\n   backfill   Download missing objects in a partial clone\n   branch     List, create, or delete branches\n   commit     Record changes to the repository\n   merge      Join two or more development histories together\n   rebase     Reapply commits on top of another base tip\n   reset      Reset current HEAD to the specified state\n   switch     Switch branches\n   tag        Create, list, delete or verify a tag object signed with GPG\n\ncollaborate (see also: git help workflows)\n   fetch      Download objects and refs from another repository\n   pull       Fetch from and integrate with another repository or a local branch\n   push       Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m03:45:12.637699 [debug] [MainThread]: STDERR: "b''"
+[0m03:45:12.637940 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m03:45:12.638511 [info ] [MainThread]: Connection:
+[0m03:45:12.639021 [info ] [MainThread]:   method: oauth
+[0m03:45:12.639415 [info ] [MainThread]:   database: arcane-text-472313-v2
+[0m03:45:12.639766 [info ] [MainThread]:   execution_project: arcane-text-472313-v2
+[0m03:45:12.640064 [info ] [MainThread]:   schema: ga4_attribution_demo
+[0m03:45:12.640388 [info ] [MainThread]:   location: US
+[0m03:45:12.640727 [info ] [MainThread]:   priority: None
+[0m03:45:12.641062 [info ] [MainThread]:   maximum_bytes_billed: None
+[0m03:45:12.641426 [info ] [MainThread]:   impersonate_service_account: None
+[0m03:45:12.641794 [info ] [MainThread]:   job_retry_deadline_seconds: None
+[0m03:45:12.642173 [info ] [MainThread]:   job_retries: 1
+[0m03:45:12.642618 [info ] [MainThread]:   job_creation_timeout_seconds: None
+[0m03:45:12.642940 [info ] [MainThread]:   job_execution_timeout_seconds: 300
+[0m03:45:12.643212 [info ] [MainThread]:   timeout_seconds: 300
+[0m03:45:12.643481 [info ] [MainThread]:   client_id: None
+[0m03:45:12.643909 [info ] [MainThread]:   token_uri: None
+[0m03:45:12.644427 [info ] [MainThread]:   compute_region: None
+[0m03:45:12.645812 [info ] [MainThread]:   dataproc_cluster_name: None
+[0m03:45:12.646256 [info ] [MainThread]:   gcs_bucket: None
+[0m03:45:12.646657 [info ] [MainThread]:   dataproc_batch: None
+[0m03:45:12.647293 [info ] [MainThread]: Registered adapter: bigquery=1.10.2
+[0m03:45:12.995889 [debug] [MainThread]: Acquiring new bigquery connection 'debug'
+[0m03:45:12.996251 [debug] [MainThread]: On debug: select 1 as id
+[0m03:45:12.996476 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m03:45:15.908361 [debug] [MainThread]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=arcane-text-472313-v2&j=bq:US:ea1bd375-9ea9-4c49-9706-4d97f3481250&page=queryresults
+[0m03:45:16.822895 [info ] [MainThread]:   Connection test: [[32mOK connection ok[0m]
+
+[0m03:45:16.823703 [info ] [MainThread]: [31m1 check failed:[0m
+[0m03:45:16.824032 [info ] [MainThread]: Project loading failed for the following reason:
+ project path <C:\Users\nayab\OneDrive\Desktop\Poornima's - Project\Bigquery-dbt\dbt_project.yml> not found
+
+[0m03:45:16.824713 [debug] [MainThread]: Command `dbt debug` failed at 03:45:16.824615 after 6.36 seconds
+[0m03:45:16.824935 [debug] [MainThread]: Connection 'debug' was properly closed.
+[0m03:45:16.825167 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000015EEB0AC640>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000015EEB067530>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000015EEAFA5AE0>]}
+[0m03:45:16.825425 [debug] [MainThread]: Flushing usage events
+[0m03:45:17.752315 [debug] [MainThread]: An error was encountered while trying to flush usage events
