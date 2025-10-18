@@ -15,7 +15,7 @@
 - Dashboard prototypes:
   - Looker Studio report (live BigQuery connection)
 - CI/CD: GitHub Actions workflow `.github/workflows/dbt-ci.yml`
-- Tests & docs: `models/*/schema.yml` + `dbt docs`
+- Tests & docs: `models/*/schema.yml` + `dbt docs` l
 
 ## How to run (local)
 1. Clone repo
